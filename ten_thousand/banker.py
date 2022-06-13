@@ -1,13 +1,13 @@
 class Banker:
     pass
     ###################
-    # Shelf method -
+    # Shelf method -  Mohammad
     ###################
 
     ###################
-    # Bank method -
+    # Bank method -  Hamad
     ###################
 
     ###################
-    # Clear Shelf method -
+    # Clear Shelf method - Hamad
     ###################

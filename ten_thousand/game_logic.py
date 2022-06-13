@@ -2,9 +2,9 @@ class GameLogic:
     pass
 
     ###################
-    # Calculate score method -
+    # Calculate score method - Yousef
     ###################
 
     ###################
-    # Roll-Dice method -
+    # Roll-Dice method - Shatha
     ###################
