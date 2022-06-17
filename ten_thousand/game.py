@@ -11,6 +11,7 @@ except ImportError:
 
 class Game:
     def __init__(self):
+        self.roller = None
         self.round = 1
         self.dice = 6
         self.flag = False
@@ -33,7 +34,8 @@ class Game:
 
                 print(f'You have {self.banker.shelved} unbanked points and {self.dice} dice remaining')
                 print('(r)oll again, (b)ank your points or (q)uit:')
-
+                if self.dice == 0:
+                    self.dice = 6
                 user_answer = input('> ')
                 if user_answer == 'q':
                     self.quit()
@@ -49,7 +51,8 @@ class Game:
         roller_input = ' '.join(map(str, (self.roller(self.dice))))
         print(f'*** {roller_input} ***')
 
-    def roll_and_get_score(self, user_answer):
+    @staticmethod
+    def roll_and_get_score(user_answer):
         dices = tuple([int(x) for x in user_answer])
         dices_shelved = len(dices)
         score = GameLogic.calculate_score(dices)

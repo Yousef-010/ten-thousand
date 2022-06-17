@@ -28,14 +28,14 @@ def test_bank_first_for_two_rounds():
     diffs = diff(game.play, path="tests/version_2/bank_first_for_two_rounds.sim")
     assert not diffs, diffs
 
-# hot dice is stretch goal
-# def test_hot_dice():
-#     """When all dice are used without a zilch
-#     then user gets 6 fresh dice and continues turn.
-#     """
-#     game = Game()
-#     diffs = diff(game.play, path="hot_dice.sim")
-#     assert not diffs, diffs
+
+def test_hot_dice():
+    """When all dice are used without a zilch
+    then user gets 6 fresh dice and continues turn.
+    """
+    game = Game()
+    diffs = diff(game.play, path="tests/version_2/hot_dice.sim")
+    assert not diffs, diffs
 
 
 def test_repeat_roller():

@@ -4,9 +4,6 @@ from collections import Counter
 
 class GameLogic:
 
-
-    ###################
-    # Calculate score method - Yousef
     def __init__(self):
         pass
 
@@ -39,6 +36,10 @@ class GameLogic:
             score = 1500
             return score
 
+        if nums_rolled[1] == 2 and nums_rolled[2] == 2 and nums_rolled[3] == 2:
+            score = 1500
+            return score
+
         # GET Four ones
         for i in range(1, 7):
             if i == 1 and nums_rolled[1] == 4:
@@ -68,10 +69,7 @@ class GameLogic:
                 score += i * 300
 
         return score
-        ###################
 
-    ###################
-    # Roll-Dice method - Shatha
     @staticmethod
     def roll_dice(num):
         # this function take a number of dice rolled as an argument and return a tuple with
@@ -89,4 +87,4 @@ class GameLogic:
         #     dice.append(x)
         # return dice
 
-    ###################
+
