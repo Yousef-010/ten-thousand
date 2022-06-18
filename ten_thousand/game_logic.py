@@ -40,6 +40,10 @@ class GameLogic:
             score = 1500
             return score
 
+        if nums_rolled[1] == 3 and nums_rolled[5] == 1:
+            score = 1050
+            return score
+
         # GET Four ones
         for i in range(1, 7):
             if i == 1 and nums_rolled[1] == 4:

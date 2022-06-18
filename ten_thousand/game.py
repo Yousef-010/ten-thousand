@@ -58,6 +58,17 @@ class Game:
         score = GameLogic.calculate_score(dices)
         return score, dices_shelved
 
+    def zilch(self):
+        print('****************************************')
+        print('**        Zilch!!! Round over         **')
+        print('****************************************')
+        print(f"You banked {self.banker.balance} points in round {self.round}")
+        print(f"Total score is {self.banker.balance} points")
+        self.banker.clear_shelf()
+        self.dice = 6
+        self.round += 1
+        print(f'Starting round {self.round}')
+
     def welcome(self):
         print('Welcome to Ten Thousand')
         print('(y)es to play or (n)o to decline')
