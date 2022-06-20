@@ -15,6 +15,8 @@
 > - clear_shelf: remove all unbanked points.
 
 >- Lab 07 Requirements
+
+
 - [x] Application should implement all features from previous version
   - [x] Application should simulate rolling between 1 and 6 dice
   - [x] Application should allow user to set aside dice each roll
