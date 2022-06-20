@@ -15,7 +15,7 @@
 > - clear_shelf: remove all unbanked points.
 
 >- Lab 07 Requirements
--[x] Application should implement all features from previous version
+- [x] Application should implement all features from previous version
   - [x] Application should simulate rolling between 1 and 6 dice
   - [x] Application should allow user to set aside dice each roll
   - [x] Application should allow “banking” current score or rolling again.
@@ -23,9 +23,20 @@
   - [x] Application should keep track of current round
   - [x] Application should have automated tests to ensure proper operation
 
+
+>- Lab 08 Requirements
+-[x] Application should implement features from versions 1 and 2
+  - [x] Should handle setting aside scoring dice and continuing turn with remaining dice.
+  - [x] Should handle when cheating occurs
+  - [x] Should allow user to continue rolling with 6 new dice when all dice have scored in current turn
+  - [x] Handle zilch
+  - [x] Must pass provided unit and simulation tests.
+
+
 >Tests
 - How do you run tests?
      - pytest -v
+     - All tests PASSED
 
 > Run game 
 - python .\ten_thousand\game.py
