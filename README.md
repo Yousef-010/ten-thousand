@@ -27,7 +27,9 @@
 
 
 >- Lab 08 Requirements
--[x] Application should implement features from versions 1 and 2
+
+
+- [x] Application should implement features from versions 1 and 2
   - [x] Should handle setting aside scoring dice and continuing turn with remaining dice.
   - [x] Should handle when cheating occurs
   - [x] Should allow user to continue rolling with 6 new dice when all dice have scored in current turn
