@@ -11,7 +11,8 @@ except ImportError:
 
 
 class Game:
-    def __init__(self):
+    def __init__(self, num_rounds=0):
+        self.num_rounds = num_rounds
         self.roller = None
         self.round = 1
         self.dice = 6
@@ -52,6 +53,9 @@ class Game:
                     self.round += 1
                     print(f'Starting round {self.round}')
                     self.dice = 6
+                    self.num_rounds += 1
+                    if self.num_rounds == 20:
+                        self.quit()
 
     def formatted_roll(self):
         roller_input = ' '.join(map(str, (self.roller(self.dice))))

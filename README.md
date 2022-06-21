@@ -37,6 +37,19 @@
   - [x] Must pass provided unit and simulation tests.
 
 
+
+>- Lab 09 Requirements
+
+
+
+- [x] Application should implement all features from previous classes
+  - [x] User should be able to see your bot play by executing bots.py from terminal.
+  
+
+> **Run bots.py** 
+- _**python .\bots.py**_
+
+
 >Tests
 - How do you run tests?
      - pytest -v
